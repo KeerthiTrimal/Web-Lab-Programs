@@ -1,0 +1,89 @@
+<! DOCTYPE  html>
+<html>
+<head>
+<title>text</title>
+</head>
+<body>
+<p  id="para" > </p>
+</body>
+
+<script>
+
+		var size = 0;
+		var myvar;
+		start();
+		function start()
+		{
+				document.getElementById("para").style.color = "red";
+				myvar = setInterval(inc,100);
+		}
+		
+		function inc()
+		{
+				size += 1;
+				document.getElementById("para").style.fontSize = size+"pt";
+				document.getElementById("para").innerHTML = "TEXT-GROWING"+size+"pt";
+				if(size==50)
+				{
+						document.getElementById("para").style.color = "blue";
+						clearInterval(myvar);
+						myvar = setInterval(dec,100);
+				}
+		}
+		
+		function dec()
+		{
+				size -= 1;
+				document.getElementById("para").style.fontSize = size+"pt";
+				document.getElementById("para").innerHTML = "TEXT-SHRINKING"+size+"pt";
+				if(size<=5)
+				{
+						
+						clearInterval(myvar);
+						start();
+				}
+		}
+		
+
+</script>
+
+</html>
+
+<!--
+
+var font=0;
+var loading; 
+start();
+document.getElementById("display").innerHTML = "TEXT-GROWING";
+function start()
+{
+loading = setInterval(inc,100);
+
+}
+
+function inc()
+{
+font += 1;
+document.getElementById("display").innerHTML = "TEXT-GROWING"+font+"pt";
+document.getElementById("display").style.fontSize = font+"pt";
+if(font>50)
+{
+clearTimeout(loaing);
+loaing  = setInterval(dec,100);
+}
+}
+
+function dec()
+{
+font = font-1;
+document.getElementById("display").innerhtml = "TEXT-SHRINKING"+font+"pt";
+document.getElementById("display").style.font-size = font+"pt";
+if(font == 5)
+{
+window.clearTimeout(loaing);
+loaing = window.setinterval("inc()",100);
+}
+document.getElementById("display").size.color = "blue";
+}
+
+-->
