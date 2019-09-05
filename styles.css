@@ -1,0 +1,19 @@
+USN {
+	color : blue;
+	background:pink;
+}
+name{
+	color:red;
+	background:white;
+}
+clg{
+	color:brown;
+	background:yellow;
+}
+branch,start{
+	color:magenta;
+}
+mail{
+	color:green;
+	background:pink;
+}

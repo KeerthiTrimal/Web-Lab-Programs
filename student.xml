@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<?xml-stylesheet type ="text/css" href="styles.css"?>
+<students>
+<student>
+<USN>USN:4VV16CS047</USN>
+<name>Keerthi V Trimal</name>
+<clg>VVCE</clg>
+<branch>7th</branch>
+<start>2016</start>
+<mail>keerthi@gmail.com</mail>
+</student>
+
+<student>
+<USN>USN:4VV16CS064</USN>
+<name>Nisarga</name>
+<clg>VVCE</clg>
+<branch>7th</branch>
+<start>2016</start>
+<mail>nish@gmail.com</mail>
+</student>
+
+<student>
+<USN>USN:4VV16CS063</USN>
+<name>Neha</name>
+<clg>VVCE</clg>
+<branch>7th</branch>
+<start>2016</start>
+<mail>neha@gmail.com</mail>
+</student>
+</students>
